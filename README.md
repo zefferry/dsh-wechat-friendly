@@ -113,10 +113,6 @@ plugin_manager action=install_bundle target="<本仓库绝对路径>"
 ```bash
 # 语法检查
 node --check lib/host.js && node --check dist/core/lib/router.js && node --check client.js
-
-# 指令解析 / 路由探针（v3：21 条指令 + info 卡 + 多卡 / 等待）
-node _tools/probe-v2-router.mjs
-node _tools/probe-v2-cards.mjs
 ```
 
 修改任何 Host 侧代码后需要重启 DSH；只改 `client.js` 刷新页面即可。
